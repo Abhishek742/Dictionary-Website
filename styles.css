@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --skin: #f5e6ca;
+  --orange: #fb9300;
+  --red: #f54748;
+  --warm: #343f56;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #f54748 0%, #fb9300 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  /* margin-top: 8vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.container {
+  z-index: 10;
+  max-width: 600px;
+  background: var(--skin);
+  padding: 20px 30px;
+  border-radius: 20px;
+  color: #343f56;
+  opacity: 0;
+  height: 0%;
+  transition: all 0.3s ease-in;
+  margin: 20px;
+}
+.result {
+  opacity: 1;
+  height: 100%;
+}
+h1 {
+  color: #f3f3f3;
+  font-size: 50px;
+}
+form {
+  margin: 30px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+#submit-button {
+  color: #f3f3f3;
+  transform: translateY(5px);
+  font-size: 22px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#input-word {
+  width: 250px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #343f56;
+}
+::placeholder {
+  opacity: 0.8;
+}
+.word {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+}
+.headings {
+  width: 100%;
+  margin: 20px 0 5px;
+}
+.spell {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.phonetics {
+  background-color: #fb9300;
+  color: #f3f3f3;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+footer p{
+  color: #343f56;
+  font-weight: 600;
+  text-align: center;
+  margin: 5px 0;
+}
+a{
+  text-decoration: none;
+  color: var(--skin)
+}
+.github{
+  color: #343f56;
+  padding: 0 10px;
+  font-size: 24px;
+  transform: translateY(3px);
+}
+.not-found{
+  text-align: center;
+  color: #f3f3f3;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  audio{
+    width: 280px;
+  }
+  .container{
+    max-width: 300px;
+    padding: 15px 15px;
+    margin: 20px 0;
+  }
+}

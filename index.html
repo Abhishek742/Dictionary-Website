@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <main>
+      <h1>Dictionary</h1>
+      <div class="form">
+        <form>
+          <input
+            type="text"
+            name="search"
+            id="input-word"
+            placeholder="Enter word"
+            autocomplete="off"
+            onkeydown="keyboardSearch(event)"
+          />
+          <i class="fas fa-search" id="submit-button"></i>
+        </form>
+        <p class="not-found"></p>
+      </div>
+      <div class="container">
+        <div class="word-container">
+          <h2 class="word"></h2>
+        </div>
+        <div class="spell">
+          <h2 class="headings">Pronounciation</h2>
+          <p class="phonetics"></p>
+          <audio controls="controls"></audio>
+        </div>
+        <div class="meaning">
+          <h2 class="headings">Meaning</h2>
+          <p class="word-meaning"></p>
+          <h2 class="headings">Example</h2>
+          <p class="example"></p>
+        </div>
+      </div>
+    </main>
+    <footer style="margin: 20px 0">
+      <p>
+        <i class="fab fa-github github"></i
+        ><a
+          href="https://github.com/Abhishek742/Dictionary-Website"
+          target="_blank"
+          >Github Link</a
+        >
+      </p>
+      <p>
+        API -
+        <a href="https://dictionaryapi.dev/" target="_blank"
+          >dictionaryapi.dev</a
+        >
+      </p>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>
